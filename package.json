@@ -1,0 +1,48 @@
+{
+  "name": "handlebars-helper-inarray",
+  "description": "Handlebars helper. Returns true if a value exists in an array. Faster than using indexOf and won't blow up on null values.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/handlebars-helper-inarray",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/handlebars-helper-inarray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/handlebars-helper-inarray/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/handlebars-helper-inarray/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "docs",
+    "documentation",
+    "generate",
+    "generator",
+    "markdown",
+    "templates",
+    "verb"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "handlebars": "^2.0.0-alpha.4",
+    "mocha": "*",
+    "verb": "~0.2.6"
+  },
+  "dependencies": {
+    "in-array": "^0.1.0"
+  }
+}
