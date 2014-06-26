@@ -1,6 +1,6 @@
 # handlebars-helper-inarray [![NPM version](https://badge.fury.io/js/handlebars-helper-inarray.png)](http://badge.fury.io/js/handlebars-helper-inarray)
 
-> Handlebars helper. Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.
+> Handlebars helper. Returns true if a value exists in an array. Faster than using indexOf and won't blow up on null values.
 
 ## Install
 Install with [npm](npmjs.org):
@@ -15,6 +15,22 @@ npm i handlebars-helper-inarray --save
 var inArray = require('in-array');
 var Handlebars = require('handlebars');
 Handlebars.registerHelper('inArray', inArray);
+```
+
+With [Assemble](https://github.com/assemble/assemble):
+
+```js
+// helpers/in-array.js
+module.exports.register = function(Handlebars) {
+  Handlebars.registerHelper('inArray', inArray);
+};
+```
+In the config:
+
+```js
+options: {
+  helpers: ['helpers/in-array.js']
+}
 ```
 
 ## Author
